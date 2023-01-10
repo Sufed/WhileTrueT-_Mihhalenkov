@@ -18,3 +18,4 @@ for a in range(n):
             print("O", end=" ")
 print()
 #a+b==n-2:
+#https://moodle.edu.ee/mod/assign/view.php?id=1937108
