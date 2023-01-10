@@ -12,10 +12,9 @@ print()
 n=int(input("Размер квадрата: "))
 for a in range(n):
     for b in range(n):
-        if a==b:
+        if a+b==n-1:
             print("X", end=" ")
         else:
             print("O", end=" ")
 print()
-#a+b==n-2:
 #https://moodle.edu.ee/mod/assign/view.php?id=1937108
