@@ -1,5 +1,11 @@
 from random import *
 #5 Вариант
+number = int(input("Enter a number: "))
+max_number = number + 10
+
+while number <= max_number:
+    print("Current number: ", number)
+    number += 1
 #Harjutus 5.
 while True:
     try:
@@ -15,10 +21,12 @@ for a in range(n): #Переменная a это строчка
             print("O", end=" ")
     print()
 #Harjutus 0.
-число = int(input("Число: "))
-while число <= 10:
+число = int(input("Число1: "))
+#Число максимальное сделать и +10 под while
+максчисло = число+10
+while число <= максчисло:
     число += 1
-for число in range(1,11):
+for число in range(число,максчисло+1):
     print("Цикл: ", число)
 print()
 #Harjutus 0.1.
@@ -65,7 +73,7 @@ for i in range(1,5):
     print(x, end="")
     print()
 for i in range(1,7):
-    x=str("*"*i(i+2)).center(18," ")
+#    x=str("*"*i(i+2)).center(18," ")
     print(x, end="")
     print()
 for i in range(1,10):
