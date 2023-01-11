@@ -1,13 +1,27 @@
 from random import *
 #5 Вариант
-#Harjutus 1.
-число=int(input("Число: "))
+#Harjutus 5.
+while True:
+    try:
+        n=int(input("Размер квадрата: "))
+        break
+    except:
+        print("Неправильно.")
+for a in range(n): #Переменная a это строчка
+    for b in range(n): #Переменная b это столб
+        if a==b or a+b==n-1:
+            print("X", end=" ")
+        else:
+            print("O", end=" ")
+    print()
+#Harjutus 0.
+число = int(input("Число: "))
 while число <= 10:
     число += 1
 for число in range(1,11):
     print("Цикл: ", число)
 print()
-
+#Harjutus 0.1.
 while True:
     try:
         число = int(input("Число: "))
@@ -20,17 +34,41 @@ else:
     print("Неа, нужно от 1-го:", end=" ")
 for число in range(1,11):
     print("Цикл: ", число)
-#Harjutus 5.
-while True:
-    try:
-        n=int(input("Размер квадрата: "))
-        break
-    except:
-        print("Неправильно.")
-for a in range(n): 
-    for b in range(n):
-        if a==b or a+b==n-1:
-            print("X", end=" ")
-        else:
-            print("O", end=" ")
+
+#Harjutus 1(6)
+for x in range(5):
+    print("******")
+#Harjutus 2(6)
+n=0
+print("kolmnurga")
+for e in range(11,0,-1):
+    n = n + 1
+    for f in range(0,n+1):
+        print("*", end="")
+    print()
+print("")
+#Harjutus 3(6)
+n=0
+print("kolmnurga")
+for e in range(11,0,-1):
+    n = n - 1
+    for f in range(0,n-1):
+        print("*", end="")
+    print()
+#Harjutus 4(6)
+for i in range(1,11):
+    print("*"*i, end="")
+    print()
+#Ёлка
+for i in range(1,5):
+    x=str("*"*i).center(18," ")
+    print(x, end="")
+    print()
+for i in range(1,7):
+    x=str("*"*i(i+2)).center(18," ")
+    print(x, end="")
+    print()
+for i in range(1,10):
+    x=str("*"*i(i+4)).center(18," ")
+    print(x, end="")
     print()
