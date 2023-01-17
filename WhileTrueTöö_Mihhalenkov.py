@@ -23,6 +23,7 @@ while число <= max_число:
     print("Текущее число: ", число)
     число += 1
 print()
+
 #Harjutus 0.1.
 print("Harjutus 0.1")
 while True:
@@ -139,13 +140,63 @@ while True:
         print("!!!")
 
 while True:
-    print("Tere Tulemast!")
+    print("Tere Tulemast")
     try:
-        print("Latte, 2.50 euro.")
-        print("Espresso, 2 euro.")
-        print("Cappuccino, 3 euro.")
-        print("Kakao, 2.20 euro.")
-        s=float(input("Sisestage summa: "))
-        if s<2 and s>3: break
-        m=input("Valige makseviis")
-        if m.lower()=="sulraga":
+        print("Latte,2.50 euro. ")
+        print("Espresso,2 euro. ")
+        print("Cappuccino,3 euro. ")
+        print("Kakao,2.20 euro. ")
+        hind=float(input("Sisestaga summa: "))
+        summa=float(input)("Anna raha.")
+        if summa==hind:
+            print("Täname ostu eest")
+        elif summa<hind:
+            print(f"Tagasiraha: {summa-hind}")
+        else:
+            print(f"Veel vaja juurde marksta {hind-summa}")
+    except:
+        print("*")
+        break
+#        m=input("Valiga makseviis: " )
+#        if m.lower()=="sularaha":
+#            if s==hind:
+#                s<hind
+#                tagaraha=hind-s
+#            elif s>hind: 
+#                veel=s-hind
+#                print(veel)
+#        if m.lower()=="kaardiga":
+#            n=int(input("Sisestaga kaardi number: "))
+#            print(n,"selle kaardiga on tehtud maksa. ")
+
+#    except:
+#        print("")
+
+print("Sa pead ära juhuslikult mõistatatud arvu (1-50). 10 katsega")
+r=randint(1,50)
+n=1
+while n<=10:
+    o=int(input("Sisesta arv: "))
+    if o==r:
+        print(f"Sa arvasid et sul läks {n} katset.")
+    elif r>o:
+        print("Väga väike")
+    elif o>r:
+        print("Väga suur")
+        n=n+1
+
+#Harjutus 9.
+n=int(input("Sisestage number n: "))
+for i in range(1,11):
+    print(f"{n}*{i}={n*i}")
+print()
+
+positive=0
+negative=0
+a=1
+while True:
+    a=int(input("Sisestage number: "))
+    if a>0: positive +=a
+    elif a<0: negative +=a
+    else:break
+print("Positiivne", positive, "Negatiivne:", negative)
